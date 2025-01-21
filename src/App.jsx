@@ -1,9 +1,12 @@
+import StarsCanvas from './components/StarsCanvas/StarsCanvas';
 import './App.css';
 
 function App() {
   return (
     <>
-      <div className='container'></div>
+      <div className='container'>
+        <StarsCanvas />
+      </div>
     </>
   );
 }
