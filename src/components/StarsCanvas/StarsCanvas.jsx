@@ -2,7 +2,7 @@ import React, { useRef, useState, useEffect } from 'react';
 import { Canvas, useFrame } from '@react-three/fiber';
 import { PerspectiveCamera } from '@react-three/drei';
 import * as THREE from 'three';
-import s from './StarsCanvas.module.scss';
+import styles from './StarsCanvas.module.scss';
 
 function getPoint() {
   const u = Math.random();
@@ -35,7 +35,7 @@ const Stars = () => {
     vertices.push(point.x * 4, point.y * 4, point.z * 4);
   }
   pointsGeometry.setAttribute(
-    "position",
+    'position',
     new THREE.Float32BufferAttribute(vertices, 3)
   );
 
@@ -55,8 +55,8 @@ const Stars = () => {
       const y = -(event.clientY / window.innerHeight) * 2 + 1;
       targetRotation.current = { x: y * 0.1, y: x * 0.1 }; // Задаємо цільові значення
     };
-    window.addEventListener("mousemove", handleMouseMove);
-    return () => window.removeEventListener("mousemove", handleMouseMove);
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
   }, []);
 
   // Анімація руху
@@ -65,7 +65,6 @@ const Stars = () => {
       const time = performance.now() * 0.0001;
       const rotationSpeed = 0.1;
       ref.current.rotation.y = time * rotationSpeed;
-
       // Плавне інтерполювання між поточним і цільовим обертанням
       smoothRotation.current.x +=
         (targetRotation.current.x - smoothRotation.current.x) * 0.05;
@@ -84,10 +83,11 @@ const Stars = () => {
 
 const StarsCanvas = () => {
   return (
-    <Canvas className={s.container}>
-      <PerspectiveCamera makeDefault position={[0, 0, 5]} />
-      <Stars />
+    <Canvas className={styles.canvas} style={{position: 'absolute'}}>
+        <PerspectiveCamera position={[0, 0, 8]} />
+        <Stars />
     </Canvas>
   );
 };
 export default StarsCanvas;
+// camera={{position: [2, 2, 2]}}

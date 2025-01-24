@@ -1,5 +1,7 @@
-.container{
-  width: 100vw;
-  height: 100vh;
+.canvas {
   background: black;
+  inset: 0;
+  right: 0;
+  left: 0;
+  z-index: -1;
 }

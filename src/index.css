@@ -22,8 +22,21 @@ body {
 
 body {
   display: flex;
-  min-height: 100vh;
+  /* min-height: 100%; */
   width: 100%;
+}
+
+@media screen and (max-width: 991px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 764px) {
+  html,
+  body {
+    font-size: 13px;
+  }
 }
 
 a {

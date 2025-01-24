@@ -1,9 +1,19 @@
 #root {
   margin: 0 auto;
-  text-align: center;
+  width: 100%;
 }
 
 .container {
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  mix-blend-mode: difference;
+}
+
+.wrapper {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 65%;
 }
