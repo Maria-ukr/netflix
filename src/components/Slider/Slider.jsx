@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
 import slide2 from '@/assets/images/slides/cover2.png';
@@ -32,8 +32,6 @@ function Slider() {
         <button ref={navigationNextRef} className={styles.next}></button>
       </div>
       <Swiper
-        spaceBetween={20}
-        slidesPerView={5.5}
         dir='rtl'
         modules={[Navigation]}
         onInit={(swiper) => {
@@ -42,7 +40,20 @@ function Slider() {
           swiper.navigation.init();
           swiper.navigation.update();
         }}
+        autoHeight={true}
         className={styles.swiper}
+        slidesPerView={5.5}
+        spaceBetween={20}
+        breakpoints={{
+          320: {
+            slidesPerView: 4.5,
+            spaceBetween: 10
+          },
+          600: {
+            slidesPerView: 5.5,
+            spaceBetween: 20,
+          },
+        }}
       >
         {movies.map((el) => (
           <SwiperSlide key={el}>

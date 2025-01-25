@@ -18,11 +18,11 @@ html,
 body {
   font-size: 16px;
   overflow-x: hidden;
+  min-height: 100vh;
 }
 
 body {
   display: flex;
-  /* min-height: 100%; */
   width: 100%;
 }
 
@@ -56,4 +56,11 @@ h1 {
 button {
   border: none;
   background-color: transparent;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
 }
