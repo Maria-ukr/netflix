@@ -46,6 +46,10 @@ function Slider() {
         spaceBetween={20}
         breakpoints={{
           320: {
+            slidesPerView: 3.5,
+            spaceBetween: 10
+          },
+          450: {
             slidesPerView: 4.5,
             spaceBetween: 10
           },

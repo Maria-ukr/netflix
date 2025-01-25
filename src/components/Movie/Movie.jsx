@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Star from './Star';
 import styles from './Movie.module.scss';
 
@@ -41,8 +41,7 @@ function Movie({ movie }) {
               <Star
                 className={styles.star}
                 style={{
-                  fill:
-                    currentRating <= (hover || rate) ? '#FFEA2B' : '',
+                  fill: currentRating <= (hover || rate) ? '#FFEA2B' : '',
                 }}
                 onMouseEnter={() => setHover(currentRating)}
                 onMouseLeave={() => setHover(null)}
