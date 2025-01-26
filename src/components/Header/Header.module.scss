@@ -41,16 +41,16 @@
     & img {
       width: 74px;
       margin-left: 2.5rem;
+        margin-left: 1.5rem;
       @media (max-width: 597px) {
         width: 55px;
-        margin-left: 1.5rem;
       }
     }
   }
   & .search {
     background-color: transparent;
     border: none;
-    background-image: url(./images/search.svg);
+    background-image: url(./search.svg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;

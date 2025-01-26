@@ -23,7 +23,7 @@
 }
 
 .prev {
-  background-image: url(./images/prev.svg);
+  background-image: url(./prev.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -42,7 +42,7 @@
   }
 }
 .next {
-  background-image: url(./images/next.svg);
+  background-image: url(./next.svg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
@@ -64,5 +64,6 @@
 .swiper {
   & img {
     overflow: hidden;
+    object-fit: contain;
   }
 }
