@@ -30,9 +30,15 @@
   width: 33px;
   height: 33px;
   margin-left: auto;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 var(--white) inset, 0 0 10px 2px var(--white);
+  &:hover {
+    box-shadow: 0 0 40px 40px var(--white) inset, 0 0 0 0 var(--white);
+  }
   &:disabled {
     opacity: 0.5;
     cursor: default;
+    box-shadow: none;
   }
 }
 .next {
@@ -43,9 +49,14 @@
   width: 33px;
   height: 33px;
   margin-left: 1rem;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 var(--white) inset, 0 0 10px 2px var(--white);
+  &:hover {
+    box-shadow: 0 0 40px 40px var(--white) inset, 0 0 0 0 var(--white);
+  }
   &:disabled {
     opacity: 0.5;
     cursor: default;
+    box-shadow: none;
   }
 }
-
