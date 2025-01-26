@@ -1,8 +1,8 @@
 import React from 'react';
 import { format } from 'date-fns';
 import styles from './Header.module.scss';
-import Logo from '@/assets/images/logo.png';
-import User from '@/assets/images/user.png';
+import Logo from './../../assets/images/logo.png';
+import User from './../../assets/images/user.png';
 
 function Header() {
   const date = format(new Date(), 'eeee MMMM Do');

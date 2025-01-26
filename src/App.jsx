@@ -1,9 +1,9 @@
-import StarsCanvas from '@/components/StarsCanvas/StarsCanvas';
+import StarsCanvas from './components/StarsCanvas/StarsCanvas';
 import './App.css';
-import Header from '@/components/Header/Header';
-import Movie from '@/components/Movie/Movie';
-import Age from '@/components/Age/Age';
-import Slider from '@/components/Slider/Slider';
+import Header from './components/Header/Header';
+import Movie from './components/Movie/Movie';
+import Age from './components/Age/Age';
+import Slider from './components/Slider/Slider';
 
 function App() {
   const movie = {

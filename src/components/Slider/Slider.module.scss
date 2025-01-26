@@ -60,3 +60,9 @@
     box-shadow: none;
   }
 }
+
+.swiper {
+  & img {
+    overflow: hidden;
+  }
+}
