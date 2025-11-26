@@ -127,16 +127,17 @@
   }
 }
 .stream {
-  background-color: var(--red);
+  background-image: linear-gradient(269deg,#af0f0f,#83655e 101.83%);
   padding: 1rem 2rem;
   border-radius: 8px;
   margin-right: 3rem;
   display: flex;
   align-items: center;
-  outline: 2px solid var(--red);
+  outline: 1px solid var(--red);
+  transition: all .3s;
   &:hover {
     color: var(--black);
-    box-shadow: 0 0 40px 40px var(--dark-grey) inset, 0 0 0 0 var(--dark-grey);
+    background-image: linear-gradient(269deg,#88827a,#e9531a 101.83%)
   }
   @media (max-width: 671px) {
     margin: 0;
@@ -161,13 +162,13 @@
 }
 .watch {
   background-color: transparent;
-  outline: 3px solid var(--white);
+  outline: 1px solid var(--white);
   border-radius: 8px;
   padding: 1.2rem 2rem;
   border-color: var(--dark-grey);
   color: var(--white);
   box-shadow: 0 0 10px 0 var(--shades-grey) inset, 0 0 10px 4px var(--dark-grey);
-  transition: all 150ms ease-in-out;
+  transition: all .3s ease-in-out;
   border: none;
   &:hover {
     color: var(--black);
@@ -181,7 +182,12 @@
 input[type='radio'] {
   display: none;
 }
+
 .star {
   cursor: pointer;
   margin-right: 8px;
+  transition: all .3s;
+  & svg {
+    transition: all .3s;
+  }
 }

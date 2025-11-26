@@ -61,9 +61,18 @@
   }
 }
 
-.swiper {
+.swiperSlider {
+  height: 100% !important;
+  & .swiperWrapper {
+    height: auto !important;
+  }
+  & .swiperSlide {
+    height: auto !important;
+  }
   & img {
     overflow: hidden;
-    object-fit: contain;
+    object-fit: cover;
+    object-position: center;
+    min-height: 100% !important;
   }
 }

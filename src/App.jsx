@@ -7,14 +7,14 @@ import Slider from './components/Slider/Slider';
 
 function App() {
   const movie = {
-    title: 'Stranger Things',
-    genre: ['Drama', 'Thriller', 'Supernatural'],
-    year: 2019,
-    disc: 'In 1980s Indiana, a group of young friends witness supernatural forces and secret government exploits. As they search for answers, the children unravel a series of extraordinary mysteries.',
-    director: 'Shawn Levy',
-    season: 3,
-    episode: 5,
-    rate: 3,
+    title: 'Dune: Part One',
+    genre: ['Adventure Epic', 'Adventure', 'Epic'],
+    year: 2024,
+    disc: 'Paul Atreides unites with the Fremen while on a warpath of revenge against the conspirators who destroyed his family. Facing a choice between the love of his life and the fate of the universe, he endeavors to prevent a terrible future.',
+    director: 'Denis Villeneuve',
+    season: 1,
+    episode: 1,
+    rate: 4,
   };
   return (
     <>

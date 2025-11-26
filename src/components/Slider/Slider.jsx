@@ -1,13 +1,13 @@
 import { useRef } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation } from 'swiper/modules';
-import slide1 from './../../assets/images/slides/cover1.jpg';
+import slide1 from './../../assets/images/slides/cover1.png';
 import slide7 from './../../assets/images/slides/cover7.jpg';
 import slide2 from './../../assets/images/slides/cover2.png';
-import slide3 from './../../assets/images/slides/cover3.png';
-import slide4 from './../../assets/images/slides/cover4.png';
+import slide3 from './../../assets/images/slides/cover3.jpg';
+import slide4 from './../../assets/images/slides/cover4.jpg';
 import slide5 from './../../assets/images/slides/cover5.png';
-import slide6 from './../../assets/images/slides/cover6.png';
+import slide6 from './../../assets/images/slides/cover6.jpg';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import styles from './Slider.module.scss';
@@ -41,9 +41,10 @@ function Slider() {
           swiper.navigation.init();
           swiper.navigation.update();
         }}
-        className={styles.swiper}
+        className={styles.swiperSlider}
         slidesPerView={5.5}
         spaceBetween={20}
+        grabCursor={true}
         breakpoints={{
           320: {
             slidesPerView: 3.5,
@@ -60,8 +61,8 @@ function Slider() {
         }}
       >
         {movies.map((el) => (
-          <SwiperSlide key={el}>
-            <img src={el} alt='slide' />
+          <SwiperSlide key={el} className={styles.swiperWrapper}>
+            <img src={el} alt='slide' className={styles.swiperSlide} />
           </SwiperSlide>
         ))}
       </Swiper>
